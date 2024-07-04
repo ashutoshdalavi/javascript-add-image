@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #image{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="image">
+
+    </div>
+</body>
+<script>
+    var img = document.createElement('img');
+    img.src ="1.jpeg";
+    img.width = 400;
+    img.height = 300;
+    var imageContainer = document.getElementById('image');
+    imageContainer.appendChild(img);
+    img.style.boxShadow = '5px 5px 10px gray';
+    img.style.borderRadius="10px";
+</script>
+
+</html>
